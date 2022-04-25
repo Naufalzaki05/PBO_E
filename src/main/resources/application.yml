@@ -1,0 +1,33 @@
+server:
+  port: 5432
+spring:
+  datasource:
+    url: postgres://yydojflxodmene:490c03da391f1024eee4bb81bb4dca50d3c7f0a9bc5e0202a50fbbadc7c1b2e7@ec2-3-218-171-44.compute-1.amazonaws.com:5432/dcn6cht39sek5g
+    username: yydojflxodmene
+    password: 490c03da391f1024eee4bb81bb4dca50d3c7f0a9bc5e0202a50fbbadc7c1b2e7
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  messages:
+    basename: base
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: rifkymaulana.ofc@gmail.com
+    password: kjbgsuwgzrwqvnki
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 30000
+          timeout: 30000
+    protocol: smtp
+    test-connection: false
